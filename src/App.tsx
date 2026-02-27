@@ -79,7 +79,6 @@ function App() {
         </section>
 
         <section className="intro-text">
-          <h2 className="main-heading">PROFESSION DE FOI</h2>
           <p className="lead-text">
             Une équipe investie, présente et à l'écoute.
             Des habitants engagés pour l'avenir de Succieu.
