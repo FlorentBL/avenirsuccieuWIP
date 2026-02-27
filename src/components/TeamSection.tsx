@@ -161,7 +161,7 @@ const candidates: Candidate[] = [
         profession: "Retraité Bureau d'études Gaz de France",
         neighborhood: "La Garine",
         experience: "Aucune expérience municipale",
-        bio: "Manquant",
+        bio: "Habitant de Succieu depuis 2014 et retraité du secteur de l’énergie, je souhaite mettre mon expérience, mon sens pratique et mon engagement au service de notre commune et de ses habitants.",
         photo: "/photos/Rolland Delair.JPG"
     },
     {
