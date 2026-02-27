@@ -15,9 +15,25 @@ function WheatBackground() {
   )
 }
 
+function Navbar() {
+  return (
+    <nav className="main-nav">
+      <div className="nav-container">
+        <a href="#" className="nav-logo">Succieu 2026</a>
+        <div className="nav-links">
+          <a href="#equipe">L'Équipe</a>
+          <a href="#thematiques">Nos Thématiques</a>
+          <a href="mailto:avenirsuccieu@gmail.com" className="nav-contact">Contact</a>
+        </div>
+      </div>
+    </nav>
+  )
+}
+
 function App() {
   return (
     <div className="container">
+      <Navbar />
       <WheatBackground />
       <header>
         <h1>Succieu</h1>

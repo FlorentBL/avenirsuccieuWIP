@@ -248,7 +248,7 @@ export function TeamSection() {
     const [selectedCandidate, setSelectedCandidate] = useState<Candidate | null>(null);
 
     return (
-        <section className="team-section">
+        <section className="team-section" id="equipe">
             <h3>Des habitants engagés pour l'avenir de Succieu.</h3>
             <p className="team-intro">Cliquez sur un nom pour découvrir nos portraits.</p>
 

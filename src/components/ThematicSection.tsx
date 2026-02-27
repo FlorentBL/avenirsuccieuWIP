@@ -60,7 +60,7 @@ const themes: ThemeItem[] = [
 
 export function ThematicSection() {
     return (
-        <section className="thematic-section">
+        <section className="thematic-section" id="thematiques">
             <div className="themes-grid">
                 {themes.map((theme, idx) => (
                     <div key={idx} className="theme-card">
