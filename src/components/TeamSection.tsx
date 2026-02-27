@@ -227,10 +227,12 @@ function CandidateModal({ candidate, onClose }: { candidate: Candidate; onClose:
                     </div>
 
                     <div className="modal-details">
-                        <div className="detail-section">
-                            <h4>Expérience</h4>
-                            <p>{candidate.experience}</p>
-                        </div>
+                        {candidate.experience !== "Aucune expérience municipale" && candidate.experience !== "Manquant" && (
+                            <div className="detail-section">
+                                <h4>Expérience</h4>
+                                <p>{candidate.experience}</p>
+                            </div>
+                        )}
                         <div className="detail-section">
                             <h4>Présentation</h4>
                             <p>{candidate.bio}</p>
