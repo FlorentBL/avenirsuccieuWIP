@@ -14,6 +14,86 @@ interface Candidate {
 
 const candidates: Candidate[] = [
     {
+        id: "alain",
+        name: "Alain Douillet",
+        age: "Manquant",
+        profession: "Manquant",
+        neighborhood: "Le Bégot",
+        experience: "19 ans Conseiller Municipal, 18 ans Adjoint",
+        bio: "Manquant",
+        photo: "/photos/Alain Douillet.JPG"
+    },
+    {
+        id: "anne-laure",
+        name: "Anne-Laure Barral-Joannes",
+        age: 45,
+        profession: "Professeur des écoles",
+        neighborhood: "Le Grand Verger",
+        experience: "Élue depuis 16 ans dont 6 ans en tant qu'adjointe",
+        bio: "Manquant",
+        photo: "/photos/Barral-Joannes Anne-Laure.jpg"
+    },
+    {
+        id: "arnaud",
+        name: "Arnaud Rabatel",
+        age: 39,
+        profession: "Fonctionnaire d'État",
+        neighborhood: "Le Javet / La Mûre",
+        experience: "Aucune expérience municipale",
+        bio: "Manquant",
+        photo: "/photos/Arnaud Rabatel.JPG"
+    },
+    {
+        id: "audrey",
+        name: "Audrey Grange",
+        age: 43,
+        profession: "Dessinatrice en maisons individuelles",
+        neighborhood: "La Garine",
+        experience: "Aucune expérience municipale",
+        bio: "Manquant",
+        photo: "/photos/Audrey Grange.JPG"
+    },
+    {
+        id: "aurore",
+        name: "Aurore Chambert",
+        age: 40,
+        profession: "Gérante",
+        neighborhood: "Le Javet",
+        experience: "Aucune expérience municipale",
+        bio: "Manquant",
+        photo: "/photos/Aurore Chambert.JPG"
+    },
+    {
+        id: "brigitte",
+        name: "Brigitte Gallois",
+        age: 48,
+        profession: "Cadre RH fonction publique territoriale",
+        neighborhood: "Le Grand Verger",
+        experience: "11 ans Conseillère Municipale et 1 an Adjoint",
+        bio: "Manquant",
+        photo: "/photos/Brigitte Gallois.JPG"
+    },
+    {
+        id: "corinne",
+        name: "Corinne Paquier",
+        age: 55,
+        profession: "Assistante Ressources Humaines",
+        neighborhood: "Village",
+        experience: "13 ans au Conseil Municipal dont 8 ans en tant que 1ère Adjointe",
+        bio: "Manquant",
+        photo: "/photos/Corinne Paquier.JPG"
+    },
+    {
+        id: "florence",
+        name: "Florence Estellés-Moutot",
+        age: 38,
+        profession: "Animatrice culturelle",
+        neighborhood: "Le gapillon",
+        experience: "Conseillère municipale (mandat de 6 ans)",
+        bio: "Manquant",
+        photo: "/photos/Florent Estelles Moutot.JPG"
+    },
+    {
         id: "florent",
         name: "Florent Bonnet-Ligeon",
         age: 37,
@@ -35,76 +115,6 @@ const candidates: Candidate[] = [
         photo: "/photos/Herve Casse.JPG"
     },
     {
-        id: "sandra",
-        name: "Sandra Garnier",
-        age: 51,
-        profession: "Assistante de Direction",
-        neighborhood: "Le Genevay",
-        experience: "Aucune expérience municipale",
-        bio: "Manquant",
-        photo: "/photos/Sandra Garnier.JPG"
-    },
-    {
-        id: "alain",
-        name: "Alain Douillet",
-        age: "Manquant",
-        profession: "Manquant",
-        neighborhood: "Le Bégot",
-        experience: "19 ans Conseiller Municipal, 18 ans Adjoint",
-        bio: "Manquant",
-        photo: "/photos/Alain Douillet.JPG"
-    },
-    {
-        id: "aurore",
-        name: "Aurore Chambert",
-        age: 40,
-        profession: "Gérante",
-        neighborhood: "Le Javet",
-        experience: "Aucune expérience municipale",
-        bio: "Manquant",
-        photo: "/photos/Aurore Chambert.JPG"
-    },
-    {
-        id: "richard",
-        name: "Richard Veyet",
-        age: 55,
-        profession: "Technico-Commercial secteur bâtiment",
-        neighborhood: "Buffières",
-        experience: "Ancien conseiller municipal (mandat de 6 ans)",
-        bio: "Manquant",
-        photo: "/photos/Richard Veyet.JPG"
-    },
-    {
-        id: "corinne",
-        name: "Corinne Paquier",
-        age: 55,
-        profession: "Assistante Ressources Humaines",
-        neighborhood: "Village",
-        experience: "13 ans au Conseil Municipal dont 8 ans en tant que 1ère Adjointe",
-        bio: "Manquant",
-        photo: "/photos/Corinne Paquier.JPG"
-    },
-    {
-        id: "romain",
-        name: "Romain Rudler",
-        age: 21,
-        profession: "Mécanicien agricole",
-        neighborhood: "Les Grailles",
-        experience: "Aucune expérience municipale",
-        bio: "Manquant",
-        photo: "/photos/Romain Rudler.JPG"
-    },
-    {
-        id: "brigitte",
-        name: "Brigitte Gallois",
-        age: 48,
-        profession: "Cadre RH fonction publique territoriale",
-        neighborhood: "Le Grand Verger",
-        experience: "11 ans Conseillère Municipale et 1 an Adjointe",
-        bio: "Manquant",
-        photo: "/photos/Brigitte Gallois.JPG"
-    },
-    {
         id: "julien",
         name: "Julien Dufeu",
         age: 38,
@@ -113,36 +123,6 @@ const candidates: Candidate[] = [
         experience: "Aucune expérience municipale",
         bio: "Manquant",
         photo: "/photos/Julien Dufeu.JPG"
-    },
-    {
-        id: "audrey",
-        name: "Audrey Grange",
-        age: 43,
-        profession: "Dessinatrice en maisons individuelles",
-        neighborhood: "La Garine",
-        experience: "Aucune expérience municipale",
-        bio: "Manquant",
-        photo: "/photos/Audrey Grange.JPG"
-    },
-    {
-        id: "florence",
-        name: "Florence Estellés-Moutot",
-        age: 38,
-        profession: "Animatrice culturelle",
-        neighborhood: "Le gapillon",
-        experience: "Conseillère municipale (mandat de 6 ans)",
-        bio: "Manquant",
-        photo: "/photos/Florent Estelles Moutot.JPG"
-    },
-    {
-        id: "rolland",
-        name: "Rolland Delair",
-        age: 73,
-        profession: "Retraité Bureau d'études Gaz de France",
-        neighborhood: "La Garine",
-        experience: "Aucune expérience municipale",
-        bio: "Manquant",
-        photo: "/photos/Rolland Delair.JPG"
     },
     {
         id: "laurie",
@@ -165,24 +145,44 @@ const candidates: Candidate[] = [
         photo: "/photos/Pierre Ricca.JPG"
     },
     {
-        id: "anne-laure",
-        name: "Anne-Laure Barral-Joannes",
-        age: 45,
-        profession: "Professeur des écoles",
-        neighborhood: "Le Grand Verger",
-        experience: "Élue depuis 16 ans dont 6 ans en tant qu'adjointe",
+        id: "richard",
+        name: "Richard Veyet",
+        age: 55,
+        profession: "Technico-Commercial secteur bâtiment",
+        neighborhood: "Buffières",
+        experience: "Ancien conseiller municipal (mandat de 6 ans)",
         bio: "Manquant",
-        photo: "/photos/Barral-Joannes Anne-Laure.jpg"
+        photo: "/photos/Richard Veyet.JPG"
     },
     {
-        id: "arnaud",
-        name: "Arnaud Rabatel",
-        age: 39,
-        profession: "Fonctionnaire d'État",
-        neighborhood: "Le Javet / La Mûre",
+        id: "rolland",
+        name: "Rolland Delair",
+        age: 73,
+        profession: "Retraité Bureau d'études Gaz de France",
+        neighborhood: "La Garine",
         experience: "Aucune expérience municipale",
         bio: "Manquant",
-        photo: "/photos/Arnaud Rabatel.JPG"
+        photo: "/photos/Rolland Delair.JPG"
+    },
+    {
+        id: "romain",
+        name: "Romain Rudler",
+        age: 21,
+        profession: "Mécanicien agricole",
+        neighborhood: "Les Grailles",
+        experience: "Aucune expérience municipale",
+        bio: "Manquant",
+        photo: "/photos/Romain Rudler.JPG"
+    },
+    {
+        id: "sandra",
+        name: "Sandra Garnier",
+        age: 51,
+        profession: "Assistante de Direction",
+        neighborhood: "Le Genevay",
+        experience: "Aucune expérience municipale",
+        bio: "Manquant",
+        photo: "/photos/Sandra Garnier.JPG"
     }
 ];
 
@@ -247,14 +247,14 @@ export function TeamSection() {
 
     return (
         <section className="team-section">
-            <h3>Une équipe investie, présente et à l'écoute</h3>
-            <p className="team-intro">Des habitants engagés pour l'avenir de Succieu.</p>
+            <h3>Des habitants engagés pour l'avenir de Succieu.</h3>
+            <p className="team-intro">Cliquez sur un nom pour découvrir nos portraits.</p>
 
             <div className="team-grid">
                 {candidates.map((candidate) => (
                     <button
                         key={candidate.id}
-                        className={`team-member ${candidate.id === "florent" ? "lead" : ""}`}
+                        className="team-member"
                         onClick={() => setSelectedCandidate(candidate)}
                         type="button"
                     >
@@ -262,8 +262,6 @@ export function TeamSection() {
                     </button>
                 ))}
             </div>
-
-            <p className="team-footer">Des habitants liés par l'envie d'agir pour Succieu</p>
 
             {selectedCandidate && (
                 <CandidateModal
