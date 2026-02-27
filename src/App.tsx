@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { Analytics } from '@vercel/analytics/react'
-import { Milestones } from './components/Milestones'
 import { ThematicSection } from './components/ThematicSection'
 import { TeamSection } from './components/TeamSection'
 
@@ -86,10 +85,7 @@ function App() {
         </section>
 
         <ThematicSection />
-
         <TeamSection />
-
-        <Milestones />
       </main>
 
       <footer className="contact-footer">

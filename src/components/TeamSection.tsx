@@ -3,10 +3,11 @@ import { useState, useEffect } from 'react';
 interface Candidate {
     id: string;
     name: string;
-    age?: number;
-    profession: string;
-    experience?: string;
-    bio: string;
+    age: number | "Manquant";
+    profession: string | "Manquant";
+    neighborhood: string | "Manquant";
+    experience: string | "Manquant";
+    bio: string | "Manquant";
     photo?: string;
 }
 
@@ -14,140 +15,172 @@ const candidates: Candidate[] = [
     {
         id: "florent",
         name: "Florent Bonnet-Ligeon",
-        age: 42,
-        profession: "Cadre dirigeant indépendant",
-        experience: "Conseiller municipal sortant",
-        bio: "Fort d'une expérience de gestion et d'un engagement constant pour Succieu.",
+        age: 37,
+        profession: "Manager - Secteur Télécom",
+        neighborhood: "Le Pré Vert",
+        experience: "Aucune expérience municipale",
+        bio: "Manquant",
         photo: "/photos/Florent Bonnet Ligeon.JPG"
     },
     {
-        id: "arnaud",
-        name: "Arnaud Rabatel",
-        age: 46,
-        profession: "Ingénieur de production",
-        experience: "Engagement associatif local",
-        bio: "Passionné par le développement durable et la vie villageoise.",
-        photo: "/photos/Arnaud Rabatel.JPG"
+        id: "herve",
+        name: "Hervé Casse",
+        age: 67,
+        profession: "Expert comptable retraité",
+        neighborhood: "Village",
+        experience: "40 ans de vie associative (culturelle et sociale)",
+        bio: "Manquant",
+        photo: "/photos/Herve Casse.JPG"
+    },
+    {
+        id: "sandra",
+        name: "Sandra Garnier",
+        age: 51,
+        profession: "Assistante de Direction",
+        neighborhood: "Le Genevay",
+        experience: "Aucune expérience municipale",
+        bio: "Manquant",
+        photo: "/photos/Sandra Garnier.JPG"
     },
     {
         id: "alain",
         name: "Alain Douillet",
-        age: 63,
-        profession: "Retraité industriel",
-        bio: "Souhaite mettre son expérience au service de la collectivité pour les projets techniques.",
+        age: "Manquant",
+        profession: "Manquant",
+        neighborhood: "Le Bégot",
+        experience: "19 ans Conseiller Municipal, 18 ans Adjoint",
+        bio: "Manquant",
         photo: "/photos/Alain Douillet.JPG"
     },
     {
         id: "aurore",
         name: "Aurore Chambert",
-        age: 39,
-        profession: "Mère au foyer",
-        bio: "Impliquée dans la vie scolaire et soucieuse de l'avenir de nos enfants à Succieu.",
+        age: 40,
+        profession: "Gérante",
+        neighborhood: "Le Javet",
+        experience: "Aucune expérience municipale",
+        bio: "Manquant",
         photo: "/photos/Aurore Chambert.JPG"
-    },
-    {
-        id: "herve",
-        name: "Hervé Casse",
-        age: 58,
-        profession: "Technicien",
-        bio: "Fervent défenseur de l'environnement rural et de la tranquillité du village.",
-        photo: "/photos/Herve Casse.JPG"
-    },
-    {
-        id: "audrey",
-        name: "Audrey Grange",
-        age: 44,
-        profession: "Cadre de santé",
-        bio: "Engagée pour le bien-être social et le renforcement des liens intergénérationnels.",
-        photo: "/photos/Audrey Grange.JPG"
-    },
-    {
-        id: "laurie",
-        name: "Laurie Poënsin-Caillat",
-        age: 35,
-        profession: "Enseignante",
-        bio: "À l'écoute des besoins éducatifs, culturels et de l'épanouissement des jeunes.",
-        photo: "/photos/Laurie Poensin Caillat.JPG"
-    },
-    {
-        id: "romain",
-        name: "Romain Rudler",
-        age: 38,
-        profession: "Artisan",
-        bio: "Souhaite soutenir l'artisanat local et le dynamisme économique de la commune.",
-        photo: "/photos/Romain Rudler.JPG"
-    },
-    {
-        id: "anne-laure",
-        name: "Anne-Laure Barral-Joannes",
-        age: 41,
-        profession: "Responsable ressources humaines",
-        bio: "Experte en dialogue et médiation, pour une mairie ouverte à tous.",
-        photo: "/photos/Barral-Joannes Anne-Laure.jpg"
     },
     {
         id: "richard",
         name: "Richard Veyet",
         age: 55,
-        profession: "Agriculteur",
-        bio: "Attaché à la préservation des terres agricoles et du patrimoine rural.",
+        profession: "Technico-Commercial secteur bâtiment",
+        neighborhood: "Buffières",
+        experience: "Ancien conseiller municipal (mandat de 6 ans)",
+        bio: "Manquant",
         photo: "/photos/Richard Veyet.JPG"
-    },
-    {
-        id: "sandra",
-        name: "Sandra Garnier",
-        age: 44,
-        profession: "Gestionnaire",
-        bio: "Rigoureuse dans le suivi administratif et financier des dossiers communaux.",
-        photo: "/photos/Sandra Garnier.JPG"
-    },
-    {
-        id: "rolland",
-        name: "Rolland Delair",
-        age: 70,
-        profession: "Retraité technique",
-        bio: "Mémoire du village et membre actif du tissu associatif de Succieu.",
-        photo: "/photos/Rolland Delair.JPG"
-    },
-    {
-        id: "brigitte",
-        name: "Brigitte Gallois",
-        age: 62,
-        profession: "Secrétaire",
-        bio: "Sens du service public et disponibilité pour l'accueil des habitants.",
-        photo: "/photos/Brigitte Gallois.JPG"
-    },
-    {
-        id: "pierre",
-        name: "Pierre Ricca",
-        age: 52,
-        profession: "Cadre technique",
-        bio: "Soucieux de la maintenance et du développement des infrastructures du village.",
-        photo: "/photos/Pierre Ricca.JPG"
     },
     {
         id: "corinne",
         name: "Corinne Paquier",
-        age: 57,
-        profession: "Infirmière",
-        bio: "Le soin des autres au cœur de son engagement municipal.",
+        age: 55,
+        profession: "Assistante Ressources Humaines",
+        neighborhood: "Village",
+        experience: "13 ans au Conseil Municipal dont 8 ans en tant que 1ère Adjointe",
+        bio: "Manquant",
         photo: "/photos/Corinne Paquier.JPG"
     },
     {
-        id: "florence",
-        name: "Florence Estellés-Moutot",
+        id: "romain",
+        name: "Romain Rudler",
+        age: 21,
+        profession: "Mécanicien agricole",
+        neighborhood: "Les Grailles",
+        experience: "Aucune expérience municipale",
+        bio: "Manquant",
+        photo: "/photos/Romain Rudler.JPG"
+    },
+    {
+        id: "brigitte",
+        name: "Brigitte Gallois",
         age: 48,
-        profession: "Conseillère financière",
-        bio: "Orientée vers une gestion budgétaire saine et transparente pour la commune.",
-        photo: "/photos/Florent Estelles Moutot.JPG"
+        profession: "Cadre RH fonction publique territoriale",
+        neighborhood: "Le Grand Verger",
+        experience: "11 ans Conseillère Municipale et 1 an Adjointe",
+        bio: "Manquant",
+        photo: "/photos/Brigitte Gallois.JPG"
     },
     {
         id: "julien",
         name: "Julien Dufeu",
-        age: 33,
-        profession: "Technicien supérieur",
-        bio: "Une vision jeune et technique pour moderniser nos services communaux.",
+        age: 38,
+        profession: "Technicien R&D",
+        neighborhood: "Fichaillon",
+        experience: "Aucune expérience municipale",
+        bio: "Manquant",
         photo: "/photos/Julien Dufeu.JPG"
+    },
+    {
+        id: "audrey",
+        name: "Audrey Grange",
+        age: 43,
+        profession: "Dessinatrice en maisons individuelles",
+        neighborhood: "La Garine",
+        experience: "Aucune expérience municipale",
+        bio: "Manquant",
+        photo: "/photos/Audrey Grange.JPG"
+    },
+    {
+        id: "florence",
+        name: "Florence Estellés-Moutot",
+        age: 38,
+        profession: "Animatrice culturelle",
+        neighborhood: "Le gapillon",
+        experience: "Conseillère municipale (mandat de 6 ans)",
+        bio: "Manquant",
+        photo: "/photos/Florent Estelles Moutot.JPG"
+    },
+    {
+        id: "rolland",
+        name: "Rolland Delair",
+        age: 73,
+        profession: "Retraité Bureau d'études Gaz de France",
+        neighborhood: "La Garine",
+        experience: "Aucune expérience municipale",
+        bio: "Manquant",
+        photo: "/photos/Rolland Delair.JPG"
+    },
+    {
+        id: "laurie",
+        name: "Laurie Poënsin-Caillat",
+        age: 32,
+        profession: "Facilitatrice clauses sociales",
+        neighborhood: "Buffières",
+        experience: "Aucune expérience municipale",
+        bio: "Manquant",
+        photo: "/photos/Laurie Poensin Caillat.JPG"
+    },
+    {
+        id: "pierre",
+        name: "Pierre Ricca",
+        age: "Manquant",
+        profession: "Manquant",
+        neighborhood: "Le Pré Vert",
+        experience: "Manquant",
+        bio: "Manquant",
+        photo: "/photos/Pierre Ricca.JPG"
+    },
+    {
+        id: "anne-laure",
+        name: "Anne-Laure Barral-Joannes",
+        age: 45,
+        profession: "Professeur des écoles",
+        neighborhood: "Le Grand Verger",
+        experience: "Élue depuis 16 ans dont 6 ans en tant qu'adjointe",
+        bio: "Manquant",
+        photo: "/photos/Barral-Joannes Anne-Laure.jpg"
+    },
+    {
+        id: "arnaud",
+        name: "Arnaud Rabatel",
+        age: 39,
+        profession: "Fonctionnaire d'État",
+        neighborhood: "Le Javet / La Mûre",
+        experience: "Aucune expérience municipale",
+        bio: "Manquant",
+        photo: "/photos/Arnaud Rabatel.JPG"
     }
 ];
 
@@ -157,7 +190,6 @@ function CandidateModal({ candidate, onClose }: { candidate: Candidate; onClose:
             if (e.key === 'Escape') onClose();
         };
         window.addEventListener('keydown', handleEsc);
-        // Prevent scroll when modal is open
         document.body.style.overflow = 'hidden';
         return () => {
             window.removeEventListener('keydown', handleEsc);
@@ -181,19 +213,18 @@ function CandidateModal({ candidate, onClose }: { candidate: Candidate; onClose:
                         <div className="modal-title-group">
                             <h2 className="modal-name">{candidate.name}</h2>
                             <div className="modal-stats">
-                                {candidate.age && <span className="stat-pill">{candidate.age} ans</span>}
-                                <span className="stat-pill">{candidate.profession}</span>
+                                {candidate.age !== "Manquant" && <span className="stat-pill">{candidate.age} ans</span>}
+                                {candidate.profession !== "Manquant" && <span className="stat-pill">{candidate.profession}</span>}
+                                {candidate.neighborhood !== "Manquant" && <span className="stat-pill">Quartier : {candidate.neighborhood}</span>}
                             </div>
                         </div>
                     </div>
 
                     <div className="modal-details">
-                        {candidate.experience && (
-                            <div className="detail-section">
-                                <h4>Expérience</h4>
-                                <p>{candidate.experience}</p>
-                            </div>
-                        )}
+                        <div className="detail-section">
+                            <h4>Expérience</h4>
+                            <p>{candidate.experience}</p>
+                        </div>
                         <div className="detail-section">
                             <h4>Présentation</h4>
                             <p>{candidate.bio}</p>
