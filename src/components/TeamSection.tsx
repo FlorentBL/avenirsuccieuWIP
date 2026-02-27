@@ -9,6 +9,7 @@ interface Candidate {
     experience: string | "Manquant";
     bio: string | "Manquant";
     photo?: string;
+    objectPosition?: string;
 }
 
 const candidates: Candidate[] = [
@@ -19,8 +20,9 @@ const candidates: Candidate[] = [
         profession: "Manager - Secteur Télécom",
         neighborhood: "Le Pré Vert",
         experience: "Aucune expérience municipale",
-        bio: "Manquant",
-        photo: "/photos/Florent Bonnet Ligeon.JPG"
+        bio: "Installé dans notre commune depuis un an, j'ai eu le plaisir de découvrir l'équipe municipale lors d'un pot d'accueil pour les nouveaux arrivants, peu après qu'Alain reprenne le rôle de Maire. Touché par la bienveillance et l'engagement sincère de ces élus pour Succieu, j'ai souhaité leur apporter mon soutien en rejoignant la liste. Mon ambition pour ce mandat est de mettre mon expertise numérique au service de tous, afin de vous accompagner dans la transition digitale et de faciliter notre quotidien.",
+        photo: "/photos/Florent Bonnet Ligeon.JPG",
+        objectPosition: "50% 15%"
     },
     {
         id: "herve",
@@ -205,7 +207,11 @@ function CandidateModal({ candidate, onClose }: { candidate: Candidate; onClose:
                     <div className="modal-header-info">
                         <div className="modal-avatar">
                             {candidate.photo ? (
-                                <img src={candidate.photo} alt={candidate.name} />
+                                <img
+                                    src={candidate.photo}
+                                    alt={candidate.name}
+                                    style={candidate.objectPosition ? { objectPosition: candidate.objectPosition } : {}}
+                                />
                             ) : (
                                 <div className="avatar-placeholder">{candidate.name.split(' ').map(n => n[0]).join('')}</div>
                             )}
