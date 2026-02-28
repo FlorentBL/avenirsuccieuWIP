@@ -645,3 +645,65 @@ h1 {
 html {
   scroll-behavior: smooth;
 }
+
+/* Mobile responsive adjustments for Candidate Modal */
+@media (max-width: 600px) {
+  .modal-content {
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal-body {
+    overflow-y: auto;
+    padding: 2.5rem 1.25rem 1.5rem;
+    flex: 1;
+    min-height: 0;
+  }
+
+  .modal-header-info {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .modal-avatar {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto;
+  }
+
+  .modal-title-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .modal-stats {
+    justify-content: center;
+  }
+
+  .modal-name {
+    font-size: 1.5rem;
+  }
+
+  .modal-details {
+    max-height: none;
+    overflow-y: visible;
+    padding-right: 0;
+  }
+
+  .close-button {
+    top: 0.5rem;
+    right: 0.5rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
