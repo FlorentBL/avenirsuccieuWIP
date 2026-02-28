@@ -29,7 +29,7 @@ const candidates: Candidate[] = [
         age: 45,
         profession: "Professeur des écoles",
         neighborhood: "Le Grand Verger",
-        experience: "Élue depuis 16 ans, dont 7 ans adjointe et 3 ans conseillère déléguée",
+        experience: "Élue depuis 16 ans, dont 3 ans conseillère déléguée et 7 ans adjointe",
         bio: "Originaire de Succieu et profondément attachée à mon village, j'ai choisi d'y vivre avec ma famille. Engagée depuis de nombreuses années au sein du conseil municipal, je souhaite partager avec la nouvelle équipe l'expérience acquise durant ces 3 mandats.",
         photo: "/photos/Barral-Joannes Anne-Laure.jpg"
     },
@@ -118,10 +118,10 @@ const candidates: Candidate[] = [
         id: "julien",
         name: "Julien Dufeu",
         age: 38,
-        profession: "Technicien R&D",
+        profession: "Technicien de recherche et développement en appareillage haute tension",
         neighborhood: "Fichaillon",
         experience: "Aucune expérience municipale",
-        bio: "Manquant",
+        bio: "Installé à Succieu depuis 2015 et père de deux enfants, je suis profondément attaché à la qualité de vie de notre commune. En pratiquant régulièrement la course à pied sur les chemins vallonnés du village, je mesure combien la tranquillité et l'équilibre de Succieu sont précieux. Je m'engage pour préserver cet équilibre aujourd'hui, défendre une gestion mesurée et agir avec bon sens au service des habitants.",
         photo: "/photos/Julien Dufeu.JPG"
     },
     {
