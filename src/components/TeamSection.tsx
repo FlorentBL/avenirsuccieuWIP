@@ -16,7 +16,7 @@ const candidates: Candidate[] = [
     {
         id: "alain",
         name: "Alain Douillet",
-        age: "Manquant",
+        age: 65,
         profession: "Ancien exploitant agricole",
         neighborhood: "Le Bégot",
         experience: "19 ans Conseiller Municipal, 18 ans Adjoint, 11 mois Maire",
