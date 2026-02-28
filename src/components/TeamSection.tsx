@@ -19,7 +19,7 @@ const candidates: Candidate[] = [
         age: "Manquant",
         profession: "Ancien exploitant agricole",
         neighborhood: "Le Bégot",
-        experience: "19 ans Conseiller Municipal, 18 ans Adjoint",
+        experience: "19 ans Conseiller Municipal, 18 ans Adjoint, 11 mois Maire",
         bio: "Natif du village et ancien exploitant agricole dans la commune, j'ai exercé 3 mandats d'adjoint, ainsi que 11 mois de maire après la démission de Guillaume Vial. Toujours disponible pour le bien de tous, je suis fier de vivre à Succieu, une commune que je connais très bien.",
         photo: "/photos/Alain Douillet.JPG"
     },
@@ -171,7 +171,7 @@ const candidates: Candidate[] = [
         profession: "Mécanicien agricole",
         neighborhood: "Les Grailles",
         experience: "Aucune expérience municipale",
-        bio: "Manquant",
+        bio: "À 21 ans, je représente la nouvelle génération de Succieu. Mécanicien agricole aux Grailles, je suis attaché aux valeurs rurales de notre village et je souhaite apporter mon énergie et mon regard pratique aux projets de l'équipe. On avance ensemble pour aller plus loin !",
         photo: "/photos/Romain Rudler.JPG"
     },
     {
