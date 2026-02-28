@@ -17,10 +17,10 @@ const candidates: Candidate[] = [
         id: "alain",
         name: "Alain Douillet",
         age: "Manquant",
-        profession: "Manquant",
+        profession: "Ancien exploitant agricole",
         neighborhood: "Le Bégot",
         experience: "19 ans Conseiller Municipal, 18 ans Adjoint",
-        bio: "Manquant",
+        bio: "Natif du village et ancien exploitant agricole dans la commune, j'ai exercé 3 mandats d'adjoint, ainsi que 11 mois de maire après la démission de Guillaume Vial. Toujours disponible pour le bien de tous, je suis fier de vivre à Succieu, une commune que je connais très bien.",
         photo: "/photos/Alain Douillet.JPG"
     },
     {
@@ -30,7 +30,7 @@ const candidates: Candidate[] = [
         profession: "Professeur des écoles",
         neighborhood: "Le Grand Verger",
         experience: "Élue depuis 16 ans dont 6 ans en tant qu'adjointe",
-        bio: "Manquant",
+        bio: "Originaire de Succieu et profondément attachée à mon village, j'ai choisi d'y vivre avec ma famille. Engagée depuis de nombreuses années au sein du conseil municipal, je souhaite partager avec la nouvelle équipe l'expérience acquise durant ces 3 mandats.",
         photo: "/photos/Barral-Joannes Anne-Laure.jpg"
     },
     {
@@ -60,7 +60,7 @@ const candidates: Candidate[] = [
         profession: "Gérante",
         neighborhood: "Le Javet",
         experience: "Aucune expérience municipale",
-        bio: "Manquant",
+        bio: "Non originaire de la région, j'ai trouvé dans notre commune un véritable équilibre de vie, grâce à la qualité de son environnement. Engagée dans le milieu associatif depuis des années, cela m'a permis de m'impliquer concrètement dans la vie locale et de créer du lien. Depuis plus d'un an, ma présence aux conseils municipaux a renforcé mon envie de m'y investir davantage. Aujourd'hui, je souhaite m'engager pleinement pour le prochain mandat, avec sérieux et dynamisme, afin de contribuer à préserver notre cadre de vie et à préparer l'avenir de notre commune.",
         photo: "/photos/Aurore Chambert.JPG"
     },
     {
@@ -70,7 +70,7 @@ const candidates: Candidate[] = [
         profession: "Cadre RH fonction publique territoriale",
         neighborhood: "Le Grand Verger",
         experience: "11 ans Conseillère Municipale et 1 an Adjoint",
-        bio: "Manquant",
+        bio: "Parcourant les chemins du village en courant avec mon chien depuis de nombreuses années, je suis très attachée au caractère rural et tranquille de Succieu. Je souhaite poursuivre mon engagement en menant à bien des projets et actions cohérents avec l'identité de mon village, en prenant en compte l'intérêt de l'ensemble de ses habitants.",
         photo: "/photos/Brigitte Gallois.JPG"
     },
     {
@@ -138,10 +138,10 @@ const candidates: Candidate[] = [
         id: "pierre",
         name: "Pierre Ricca",
         age: "Manquant",
-        profession: "Manquant",
+        profession: "Chef de chantier en transfert industriel",
         neighborhood: "Le Pré Vert",
         experience: "Manquant",
-        bio: "Manquant",
+        bio: "Lorsque je suis venu à Succieu pour la première fois, j'ai eu le coup de foudre pour ce village. Tranquillité, ruralité et nature sont présents à chaque carrefour. Ma femme ayant participé aux deux derniers mandats, c'est à mon tour de montrer à Succieu et à ses habitants le bonheur que nous avons de vivre ici parmi vous.",
         photo: "/photos/Pierre Ricca.JPG"
     },
     {
