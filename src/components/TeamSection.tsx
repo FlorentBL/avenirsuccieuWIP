@@ -29,7 +29,7 @@ const candidates: Candidate[] = [
         age: 45,
         profession: "Professeur des écoles",
         neighborhood: "Le Grand Verger",
-        experience: "Élue depuis 16 ans dont 6 ans en tant qu'adjointe",
+        experience: "Élue depuis 16 ans, dont 7 ans adjointe et 3 ans conseillère déléguée",
         bio: "Originaire de Succieu et profondément attachée à mon village, j'ai choisi d'y vivre avec ma famille. Engagée depuis de nombreuses années au sein du conseil municipal, je souhaite partager avec la nouvelle équipe l'expérience acquise durant ces 3 mandats.",
         photo: "/photos/Barral-Joannes Anne-Laure.jpg"
     },
@@ -40,7 +40,7 @@ const candidates: Candidate[] = [
         profession: "Fonctionnaire d'État",
         neighborhood: "Le Javet / La Mûre",
         experience: "Aucune expérience municipale",
-        bio: "Manquant",
+        bio: "Chasseur passionné et amoureux de la nature, je puise mon énergie dans le sport et dans les grands espaces. Attaché à la droiture et à l'engagement, j'aime faire avancer les choses concrètement. J'ai notamment porté deux projets participatifs : la création de l'aire de jeux et la réfection avec balisage du chemin reliant Le Javet au village.",
         photo: "/photos/Arnaud Rabatel.JPG"
     },
     {
@@ -50,7 +50,7 @@ const candidates: Candidate[] = [
         profession: "Dessinatrice en maisons individuelles",
         neighborhood: "La Garine",
         experience: "Aucune expérience municipale",
-        bio: "Manquant",
+        bio: "Habitante de Succieu depuis 2008, j'y ai construit ma famille. Après avoir été membre du Sou des Écoles pendant 10 ans, je souhaite maintenant m'investir différemment pour ma commune. Pour moi, la vraie démocratie se traduit par le respect des autres et de leurs opinions, c'est pourquoi je suis heureuse de m'engager pour Succieu et d'être à votre écoute.",
         photo: "/photos/Audrey Grange.JPG"
     },
     {
@@ -131,7 +131,7 @@ const candidates: Candidate[] = [
         profession: "Facilitatrice clauses sociales",
         neighborhood: "Buffières",
         experience: "Aucune expérience municipale",
-        bio: "Manquant",
+        bio: "Nouvelle habitante depuis cet été et jeune maman, j'ai choisi de m'engager afin de contribuer à l'avenir de notre commune et de continuer à offrir un cadre de vie agréable et paisible aux habitants de Succieu, et tout particulièrement aux enfants, qui sont le futur de notre village. Forte de mon expérience professionnelle dans le domaine des politiques publiques, je souhaite mettre mes compétences au service de Succieu et de ses habitants. C'est pour toutes ces raisons que je souhaite m'investir localement pour une commune solidaire, inclusive et attentive à chacun.",
         photo: "/photos/Laurie Poensin Caillat.JPG"
     },
     {
@@ -181,7 +181,7 @@ const candidates: Candidate[] = [
         profession: "Assistante de Direction",
         neighborhood: "Le Genevay",
         experience: "Aucune expérience municipale",
-        bio: "Manquant",
+        bio: "Installée à Succieu depuis 6 ans, mon engagement sera à la hauteur de mes valeurs : je souhaite une commune calme et paisible où il fait bon vivre, des finances mesurées et des projets réalistes, avec une équipe à l'écoute des besoins de ses habitants.",
         photo: "/photos/Sandra Garnier.JPG"
     }
 ];
