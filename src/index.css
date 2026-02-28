@@ -331,7 +331,10 @@ h1 {
 }
 
 .team-member {
-  padding: 0.7rem 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.4rem 1.4rem 0.4rem 0.4rem;
   background: white;
   border: 1px solid var(--border-color);
   border-radius: 50px;
@@ -344,7 +347,36 @@ h1 {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
 }
 
+.member-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: var(--bg-color);
+}
 
+.member-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.member-avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  background: rgba(139, 94, 60, 0.1);
+  color: var(--highlight-color);
+  font-weight: 700;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
 
 .team-member:hover {
   background: var(--highlight-color);
@@ -352,6 +384,11 @@ h1 {
   border-color: var(--highlight-color);
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(139, 94, 60, 0.2);
+}
+
+.team-member:hover .member-avatar-placeholder {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
 }
 
 .team-footer {

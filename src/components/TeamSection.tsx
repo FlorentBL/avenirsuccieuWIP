@@ -260,6 +260,19 @@ export function TeamSection() {
                         onClick={() => setSelectedCandidate(candidate)}
                         type="button"
                     >
+                        <div className="member-avatar">
+                            {candidate.photo ? (
+                                <img
+                                    src={candidate.photo}
+                                    alt={candidate.name}
+                                    style={candidate.objectPosition ? { objectPosition: candidate.objectPosition } : {}}
+                                />
+                            ) : (
+                                <div className="member-avatar-placeholder">
+                                    {candidate.name.split(' ').map(n => n[0]).join('')}
+                                </div>
+                            )}
+                        </div>
                         <span className="member-name">{candidate.name}</span>
                     </button>
                 ))}
