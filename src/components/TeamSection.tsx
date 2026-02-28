@@ -111,7 +111,7 @@ const candidates: Candidate[] = [
         profession: "Expert comptable retraité",
         neighborhood: "Village",
         experience: "40 ans de vie associative (culturelle et sociale)",
-        bio: "Manquant",
+        bio: "Après 45 ans d'une vie professionnelle et associative assidue, mes différents métiers et activités m'ont permis d'acquérir la rigueur dans les affaires, le sens des responsabilités, tout en maintenant la collégialité dans le fonctionnement et la prise de décision. Présent depuis 32 ans dans la commune de Succieu, récemment à la retraite, il m'est apparu logique de rejoindre la liste 2026, d'accepter d'être en tête de liste, cela afin de mettre mes compétences au service de notre village, avec une volonté de sérieux, de transparence et de convivialité.",
         photo: "/photos/Herve Casse.JPG"
     },
     {

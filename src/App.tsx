@@ -43,7 +43,7 @@ function App() {
       <main>
         <section className="photo-section">
           <img
-            src="/avenir-succieu-groupe-20262.jpg"
+            src="/avenir-succieu-groupe-2026.jpg"
             alt="Équipe Avenir Succieu 2026"
             className="group-photo"
           />
