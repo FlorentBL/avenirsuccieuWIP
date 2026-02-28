@@ -19,7 +19,7 @@ const candidates: Candidate[] = [
         age: 65,
         profession: "Ancien exploitant agricole",
         neighborhood: "Le Bégot",
-        experience: "19 ans Conseiller Municipal, 18 ans Adjoint, 11 mois Maire",
+        experience: "19 ans Conseiller Municipal, dont 18 ans Adjoint et 11 mois Maire",
         bio: "Natif du village et ancien exploitant agricole dans la commune, j'ai exercé 3 mandats d'adjoint, ainsi que 11 mois de maire après la démission de Guillaume Vial. Toujours disponible pour le bien de tous, je suis fier de vivre à Succieu, une commune que je connais très bien.",
         photo: "/photos/Alain Douillet.JPG"
     },
@@ -30,7 +30,7 @@ const candidates: Candidate[] = [
         profession: "Professeur des écoles",
         neighborhood: "Le Grand Verger",
         experience: "Élue depuis 16 ans, dont 3 ans conseillère déléguée et 7 ans adjointe",
-        bio: "Originaire de Succieu et profondément attachée à mon village, j'ai choisi d'y vivre avec ma famille. Engagée depuis de nombreuses années au sein du conseil municipal, je souhaite partager avec la nouvelle équipe l'expérience acquise durant ces 3 mandats.",
+        bio: "Originaire de Succieu et profondément attachée à mon village, j'ai choisi d'y vivre avec ma famille. Engagée depuis de nombreuses années au sein du conseil municipal, je souhaite partager avec la nouvelle équipe l'expérience que j'ai acquise durant ces 3 mandats.",
         photo: "/photos/Barral-Joannes Anne-Laure.jpg"
     },
     {
@@ -137,7 +137,7 @@ const candidates: Candidate[] = [
     {
         id: "pierre",
         name: "Pierre Ricca",
-        age: "Manquant",
+        age: 58,
         profession: "Chef de chantier en transfert industriel",
         neighborhood: "Le Pré Vert",
         experience: "Manquant",
