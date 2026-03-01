@@ -80,7 +80,7 @@ const candidates: Candidate[] = [
         profession: "Assistante Ressources Humaines",
         neighborhood: "Village",
         experience: "13 ans au Conseil Municipal dont 8 ans en tant que 1ère Adjointe",
-        bio: "Manquant",
+        bio: "Choisir de s’installer dans un village, c’est souvent choisir sa façon de vivre, loin des tumultes des villes. C’est pourquoi nous sommes venus habiter Succieu en 2003. Très rapidement, je me suis investie dans la vie locale. Engagée depuis très jeune dans le monde associatif, j’ai à cœur de placer l’Humain, l’écoute et le respect au cœur de mes actions. J’ai naturellement poursuivi cet engagement au sein du conseil municipal pendant 13 années, au service de notre commune et de ses habitants. Je souhaite aujourd’hui continuer mon dévouement à notre commune au sein de cette nouvelle équipe en apportant mon expérience, mes connaissances avec sincérité et bienveillance dans un esprit de respect, d'écoute et de tolérance.",
         photo: "/photos/Corinne Paquier.JPG"
     },
     {
@@ -90,7 +90,7 @@ const candidates: Candidate[] = [
         profession: "Animatrice culturelle",
         neighborhood: "Le gapillon",
         experience: "Conseillère municipale (mandat de 6 ans)",
-        bio: "Manquant",
+        bio: "Habitante de Succieu depuis 10 ans et élue municipale depuis 6 ans, je me suis engagée avec sérieux au service de notre commune. J’ai choisi de m’installer à Succieu pour sa nature, son authenticité et sa dimension rurale à taille humaine. J'affectionne ce cadre de vie simple et équilibré. Dans mes prises de position au sein du conseil, ma ligne est restée constante : agir dans l’intérêt général, avec justesse et bon sens, sans jamais privilégier un intérêt personnel. Par mon expérience municipale je souhaite contribuer à un conseil municipal ouvert, humain et attentif à l’avenir de Succieu.",
         photo: "/photos/Florent Estelles Moutot.JPG"
     },
     {
@@ -140,7 +140,7 @@ const candidates: Candidate[] = [
         age: 58,
         profession: "Chef de chantier en transfert industriel",
         neighborhood: "Le Pré Vert",
-        experience: "Manquant",
+        experience: "Aucune expérience municipale",
         bio: "Lorsque je suis venu à Succieu pour la première fois, j'ai eu le coup de foudre pour ce village. Tranquillité, ruralité et nature sont présents à chaque carrefour. Ma femme ayant participé aux deux derniers mandats, c'est à mon tour de montrer à Succieu et à ses habitants le bonheur que nous avons de vivre ici parmi vous.",
         photo: "/photos/Pierre Ricca.JPG"
     },
